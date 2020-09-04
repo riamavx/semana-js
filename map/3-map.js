@@ -6,4 +6,14 @@ const products = [
     { name: 'Repetidor de Sinal Wi-Fi', price: 44 }
   ]
 
+
+  const salesProducts = products.map(product =>{
+    if(product.price >= 30){
+      return{name: product.name, price: product.price /2}
+    }
+
+  return product
+  })
+
   console.log(products)
+  console.log(salesProducts)
