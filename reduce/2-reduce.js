@@ -10,3 +10,15 @@ const  phaseScores  =  [
     {  nome : 'Ana Paula Rocha' ,  pontuação : 359  } ,
     {  nome : 'Pedro H. Silva' ,  pontuação : 133  }
   ]
+
+  const viniciusScore = phaseScores.reduce((accumulator, phaseScore) => {
+
+    if(phaseScore.name === 'Vinicius Costa') {
+        accumulator += phaseScore.score
+
+    }
+    return accumulator
+  },0)
+
+
+  console.log(viniciusScore)
